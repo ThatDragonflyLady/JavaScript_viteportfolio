@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Scripting 2 Portfolio</title>
+  </head>
+  <body>
+
+    
+    <header>
+      <nav class="navbar">
+        
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Content -->
+    <main class="container">
+      
+      <!-- Section 1: About Me -->
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>I am a computer programming major learning Javascript,css,html,python. as well as different software development tools such as
+          github, visual studio code, and now vite. vite is a good way to help keep my files in order and see my project in real time.
+        </p>
+      </section>
+
+      <!-- Section 2: Course Goals -->
+      <section id="goals" class="card">
+        <h2>My Course Goals</h2>
+        <p>My class goals are to learn how to create a interactive website, dashboards, and other interactive elements.</p>
+        <button id="theme-btn">Toggle Interface Theme</button>
+      </section>
+
+      <!-- Section 3: Skills Tracker -->
+      <section id="skills" class="card">
+        <h2>Skills Overview</h2>
+        <div class="skills-grid" id="skills-container"><!-- Dynamic Content Inserts Here --></div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="current-year"></span> | Amanda Sprague</p>
+    </footer>
+
+    <!-- Vite Automatically Injects main.js Entrypoint -->
+     <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
