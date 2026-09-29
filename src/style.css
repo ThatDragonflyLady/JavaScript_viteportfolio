@@ -1,0 +1,156 @@
+/* Core Custom Properties */
+:root {
+  --bg-color: #06415d;
+  --text-color: #cddff0;
+  --card-bg: #090d3b;
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --border-color: #e5e7eb;
+}
+
+/* Dark Theme Target Overrides */
+body.dark-mode {
+  --bg-color: #111827;
+  --text-color: #f3f4f6;
+  --card-bg: #1f2937;
+  --border-color: #374151;
+}
+
+/* Reset and Layout Foundations */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+/* Main Content Structural Grid */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* UI Card Styling */
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.lead {
+  font-size: 1.1rem;
+}
+
+#goals-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#goals-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Flexbox Grid Structure for Skill Subcomponents */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-badge {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.skill-badge h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-tag {
+  font-size: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Custom Interactive Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Global Footer Alignment */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color);
+}
